@@ -1,4 +1,4 @@
 # portfolio
 ## Portfolio
 ### work in progress.. 
-<img src="image/protfolio.png">
+<img src="images/portfolio.png">
