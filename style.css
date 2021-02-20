@@ -6,57 +6,11 @@
   padding: 0;
   font-family: "Poiret One", cursive;
 }
-/* new to work with STAAAARRRRTTTTT*/
+
 /* html {
-  font-size: 62.5%;
+  font-size: 80%;
   box-sizing: border-box;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-.section {
-  padding: 15rem 3rem;
-  border-top: 1px solid #ddd;
-  transition: transform 1s, opacity 1s;
-}
-
-.section__title {
-  max-width: 80rem;
-  margin: 0 auto 8rem auto;
-}
-.section__description {
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--color-primary);
-  margin-bottom: 1rem;
-}
-.section__header {
-  font-size: 4rem;
-  line-height: 1.3;
-  font-weight: 500;
-}
-
-.section__hero {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-image: url("images/herophoto.jpg");
-}
-
-/* FINNNIIIIIIISSSHHHHHHHHHHHHHHHH STOP */
+} */
 
 body {
   background-color: #0b0c10;
@@ -145,19 +99,43 @@ header {
   size: cover;
 }
 
-/* Card projects */
-.project {
-  padding-top: 100px;
+/* SECTIONS */
+.section {
+  padding: 15rem 3rem;
+  border-top: 0.5px solid #1f2833;
+  transition: transform 1s, opacity 1s;
 }
 
+.section__title {
+  max-width: 80rem;
+  margin: 0 auto 8rem auto;
+  color: #66fcf1;
+}
+
+.section__description {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+/* Card projects */
+
 .column {
-  float: left;
+  float: right;
   width: 33.33%;
   padding: 0px 20px;
 }
 
 .row {
-  margin: 0px 25%;
+  margin: 20px 20%;
 }
 
 .row:after {
@@ -167,22 +145,21 @@ header {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 #45a294;
+  box-shadow: 0px 6px 18px 0px #45a29e;
   transition: 0.3s;
   width: 200px;
   height: 200px;
   text-align: center;
   color: white;
-  background: linear-gradient(#c5c6c7, #45a294);
-  padding: 10px;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 #45a294;
+  box-shadow: 0 12px 36px 0 #66fcf1;
 }
 
 .container {
   padding: 2px 16px;
+  font-size: 1.3rem;
 }
 
 /* FOOTER */
@@ -271,7 +248,11 @@ header {
   .column {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 210px;
+  }
+
+  .row {
+    box-sizing: border-box;
   }
 
   .footer__nav {
