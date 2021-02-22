@@ -127,15 +127,29 @@ header {
 }
 
 /* Card projects */
-
 .column {
-  float: right;
-  width: 33.33%;
-  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .row {
-  margin: 20px 20%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5rem;
+  margin: 1.5rem auto;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+@media (max-width: 400px) {
+  .row {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
 }
 
 .row:after {
@@ -145,12 +159,14 @@ header {
 }
 
 .card {
-  box-shadow: 0px 6px 18px 0px #45a29e;
+  box-shadow: 0 6px 18px 0 #45a29e;
   transition: 0.3s;
   width: 200px;
   height: 200px;
   text-align: center;
   color: white;
+  background: linear-gradient(#c5c6c7, #45a29e);
+  padding: 10px;
 }
 
 .card:hover {
@@ -159,7 +175,7 @@ header {
 
 .container {
   padding: 2px 16px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* FOOTER */
@@ -246,9 +262,11 @@ header {
   }
 
   .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 210px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 50px;
   }
 
   .row {
