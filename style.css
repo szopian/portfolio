@@ -20,6 +20,13 @@ body {
   min-height: 100vh;
 }
 
+header {
+  background: linear-gradient(#0b0c10, #1f2833);
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+}
+
 nav {
   justify-content: space-between;
   display: flex;
@@ -48,13 +55,6 @@ h1 {
 h5 {
   padding-bottom: 50px;
   color: white;
-}
-
-header {
-  background: linear-gradient(#0b0c10, #1f2833);
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px 20px;
 }
 
 .logo {
@@ -184,6 +184,37 @@ header {
   font-size: 1.2rem;
 }
 
+/* CONTACT */
+.contacts__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.contact__links {
+  margin: 40px 30px 15px 15px;
+  font-size: 15px;
+  /* min-width: 266px; */
+}
+
+.links {
+  color: #1f2833;
+}
+
+i {
+  color: #45a29e;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+i:hover {
+  font-size: 70.7px;
+  color: #66fcf1;
+}
+
 /* FOOTER */
 .footer {
   padding: 10rem 3rem;
@@ -277,6 +308,23 @@ header {
 
   .row {
     box-sizing: border-box;
+  }
+
+  .contacts__list {
+    display: block;
+  }
+
+  .contact__links {
+    font-size: 75%;
+  }
+
+  i {
+    font-size: 60px;
+  }
+
+  i:hover {
+    font-size: 60.7px;
+    color: #66fcf1;
   }
 
   .footer__nav {
