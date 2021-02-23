@@ -16,6 +16,7 @@ function close() {
 
 openMenu.addEventListener("click", show);
 closeMenu.addEventListener("click", close);
+mainMenu.addEventListener("click", close);
 
 particlesJS.load("particles-js", "particles.json", function () {
   console.log("particles loaded...");
