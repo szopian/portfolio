@@ -23,36 +23,7 @@ particlesJS.load("particles-js", "particles.json", function () {
 });
 
 // sticky navbar
-
-const sectionProjects = document.querySelector("#project");
-console.log(sectionProjects);
-const initailCords = sectionProjects.getBoundingClientRect();
-console.log(initailCords);
 const navbar = document.querySelector("header");
-console.log(navbar);
-
-// window.addEventListener("scroll", function () {
-//   console.log(window.scrollY);
-
-//   if (window.scrollY > initailCords.top) navbar.classList.add("sticky");
-//   else navbar.classList.remove("sticky");
-// });
-
-// const obsCallback = function (entries, observer) {
-//   entries.forEach((entry) => {
-//     console.log(entry);
-//   });
-// };
-
-// const obsOptions = {
-//   root: null,
-//   threshold: [0, 0.2],
-// };
-
-// const observer = new IntersectionObserver(obsCallback, obsOptions);
-
-// observer.observe(sectionProjects);
-
 const sectionHero = document.querySelector(".hero");
 
 const stickyNav = function (entries) {
